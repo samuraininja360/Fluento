@@ -1,0 +1,167 @@
+body {
+    padding: 0px;
+    margin: 0;
+    font-family: 'Leon';
+    font-weight: 400;
+    font-size: 18px;
+    box-sizing: content-box !important;
+}
+
+@font-face {
+    font-family: 'Aviex';
+    src: url(Aviex_Sans.ttf);
+}
+
+@font-face {
+    font-family: 'Leon';
+    src: url(LeonSans-Medium.otf);
+}
+
+@font-face {
+    font-family: 'Product';
+    src: url(Product\ Sans\ Regular.ttf);
+}
+
+a {
+    text-decoration: none !important;
+}
+
+a:focus {
+    outline: none;
+}
+
+nav {
+    color: black;
+    background-color: white;
+    padding: 0px 12.5% 0px 12.5%;
+    overflow: hidden;
+    display: block;
+    position: fixed;
+    z-index: 999999;
+    width: 100%;
+    box-shadow: #99999944 0 0 4vw 0;
+}
+.logo {
+    float: left;
+    display: flex;
+    padding: 0;
+}
+.forms {
+    float: right;
+    box-sizing: content-box;
+    padding: 10px;
+}
+.logo a.fluento {
+  color: inherit;
+  background: linear-gradient(to right, #000000, #000000);
+  background-repeat: no-repeat;
+  background-size: 0% 10%;
+  background-position-x: 50%;
+  background-position-y: 100%;
+  font-size: 20px;
+  padding: 10px;
+  box-sizing: content-box;
+  transition: 0.2s cubic-bezier(.48,.88,.39,.99);
+  padding: 15px;
+}
+.logo a.fluento:hover {
+  color: black;
+  background-size: 100% 10%;
+}
+.logo a.fluento:focus {
+    color: black;
+    background-size: 100% 10%;
+}
+.menu {
+    text-align: center;
+    display: flex;
+    justify-content: space-evenly;
+    margin: 0 25% 0 25%;
+    padding: 0;
+}
+.menu a.fluento {
+  color: inherit;
+  background: linear-gradient(to right, #000000, #000000);
+  background-repeat: no-repeat;
+  background-size: 0% 10%;
+  background-position-x: 50%;
+  background-position-y: 100%;
+  font-size: 20px;
+  box-sizing: content-box;
+  transition: 0.2s cubic-bezier(.48,.88,.39,.99);
+  margin: 0 0 0 0;
+  padding: 15px;
+}
+.menu a.fluento:hover {
+  color: black;
+  background-size: 100% 10%;
+}
+.menu a.fluento:focus {
+    color: black;
+    background-size: 100% 10%;
+} 
+button {
+    position: relative;
+    overflow: hidden;
+    transition:400ms;
+    transition-property: all;
+    color: #fff;
+    background-color: #0064ff;
+    padding: 10px 25px;
+    outline: none !important;
+    border: 0;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 400;
+    transition: 0.2s;
+}
+
+button:hover {
+    box-shadow: #0064ff99 0 0 15px 0;
+}
+  
+span.ripple {
+    position: absolute;
+    border-radius: 50%;
+    transform: scale(0);
+    animation: ripple 600ms linear;
+    background-color: rgba(255, 255, 255, 0.7);
+}
+
+.banner {
+    width: 100vw;
+    height: 100vh;
+    background-color: white;
+}
+
+#download {
+    position: absolute;
+    top: calc(50% + 100px + 30px - 47px/2);
+    left: 12.5%;
+}
+#description {
+    position: absolute;
+    top: calc(50% + 30px - 81px/2);
+    left: 12.5%;
+    font-size: 18px;
+    width: 600px;
+}
+#hooker {
+    position: absolute;
+    top: calc(50% - 100px + 30px - 108px/2);
+    left: 12.5%;
+    font-size: 72px;
+}
+#graphic1 {
+    position: absolute;
+    top: calc(50% - 100px + 30px - 108px/2);
+    right: 12.5%;
+}
+
+@keyframes ripple {
+    to {
+      transform: scale(4);
+      opacity: 0;
+    }
+}
+  
